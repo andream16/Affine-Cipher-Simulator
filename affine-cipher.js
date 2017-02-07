@@ -67,20 +67,20 @@ function encryptWord(){
 }
 
 function decryptWord(){
-	return new Promise( function(resolve){
-	  var chars = args.word.split("");
-	  var currInt = 0;
-	  var currEnc = "";
-	  //a^-1 = m - a
-	  var a_1 = 26 - args.a;
-	  chars.forEach( function( currChar){
+  return new Promise( function(resolve){
+    var chars = args.word.split("");
+    var currInt = 0;
+    var currEnc = "";
+    //a^-1 = m - a
+    var a_1 = 26 - args.a;
+    chars.forEach( function( currChar){
         currInt = parseInt(currChar, 36) - 10;
         // D(y) = a^-1 * (y - b) mod 26
         currEnc = mod((a_1 * (currInt - args.b)), 26);
         decryptedWord.push(String.fromCharCode(97 + currEnc));
-	  });
-	  return resolve(decryptedWord.join(""));	
-	});
+     }); 
+     return resolve(decryptedWord.join(""));	
+   });
 }
 
 function mod(n, m) {
