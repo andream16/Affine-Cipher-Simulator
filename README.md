@@ -12,7 +12,7 @@
  - `b` is an Integer Number
  - `word` is a word with no spaces
  
- ##How it works
+##How it works
  
   - If `a` and `m` are coprime
   - Ek(a,b)(n) = an + b mod m
