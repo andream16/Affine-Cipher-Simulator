@@ -13,10 +13,12 @@
  - `word` is a word with no spaces
  
 ##How it works
- 
+Let k = (a, b)
   - If `a` and `m` are coprime
-  - Ek(a,b)(n) = an + b mod m
+  - Ek(n) = an + b mod m
   - Dk(y) = a^-1(y-b) mod m
+
+By brute-force, it's possible to find `a` and `b` since `a` can assume only 12 values that are coprime with `m` (26), and `b` can vary in 26 values. We have a total number of `12 * 26 = 312` keys.
   
 #Examples
 
