@@ -52,18 +52,18 @@ function gcdCalc(a, b) {
 };
 
 function encryptWord(){
-	return new Promise( function(resolve){
-	  var chars = args.word.split("");
-	  var currInt = 0;
-	  var currEnc = "";
-	  chars.forEach( function( currChar){
+  return new Promise( function(resolve){
+      var chars = args.word.split("");
+      var currInt = 0;
+      var currEnc = "";
+      chars.forEach( function( currChar){
         currInt = parseInt(currChar, 36) - 10;
         // E(a,b)(n) = an + b mod 26
         currEnc = mod((args.a * currInt + args.b), 26);
         encryptedWord.push(String.fromCharCode(97 + currEnc));
-	  });
-	  return resolve(encryptedWord.join(""));	
-	});
+      });
+      return resolve(encryptedWord.join(""));	
+   });
 }
 
 function decryptWord(){
