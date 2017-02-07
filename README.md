@@ -20,7 +20,7 @@ Let k = (a, b)
 
 It's possible to perform a `Known-Plaintext-Attack` by brute-force, `a` can assume only 12 values that are coprime with `m` (26), and `b` can vary in 26 values. We have a total number of `12 * 26 = 312` keys.
   
-#Examples
+##Examples
 
 `node affine-cipher.js encrypt 5 8 affine` -> `ihhwvc`
    
