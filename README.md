@@ -18,8 +18,8 @@
   - Ek(a,b)(n) = an + b mod m
   - Dk(y) = a^-1(y-b) mod m
   
-  #Examples
-  
-   `node affine-cipher.js encrypt 5 8 affine` -> `ihhwvc`
+#Examples
+
+`node affine-cipher.js encrypt 5 8 affine` -> `ihhwvc`
    
-   `node affine-cipher.js decrypt 5 8 ihhwvc` -> `affine`
+`node affine-cipher.js decrypt 5 8 ihhwvc` -> `affine`
