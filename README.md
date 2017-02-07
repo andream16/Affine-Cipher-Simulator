@@ -18,7 +18,7 @@ Let k = (a, b)
   - Ek(n) = an + b mod m
   - Dk(y) = a^-1(y-b) mod m
 
-By brute-force, it's possible to find `a` and `b` since `a` can assume only 12 values that are coprime with `m` (26), and `b` can vary in 26 values. We have a total number of `12 * 26 = 312` keys.
+It's possible to perform a `Known-Plaintext-Attack` by brute-force, `a` can assume only 12 values that are coprime with `m` (26), and `b` can vary in 26 values. We have a total number of `12 * 26 = 312` keys.
   
 #Examples
 
